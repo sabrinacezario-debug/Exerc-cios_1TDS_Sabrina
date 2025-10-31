@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	int geracao;
+	int totalCoelhos = 0;
+	int coelhosAtual = 1;
+
+	printf("Digite o numero da geraçao:\n");
+	scanf("%d", &geracao);
+
+	for (int i = 1; i <= geracao; i++) {
+		totalCoelhos += coelhosAtual;
+		coelhosAtual *= 2;
+		printf("Total de coelhos ate a geraçao %d: %d\n", geracao, totalCoelhos);
+	}
+}
